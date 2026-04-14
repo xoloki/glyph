@@ -1,0 +1,25 @@
+name: Glyph
+options:
+  bundleIdPrefix: com.glyph
+  deploymentTarget:
+    iOS: "16.0"
+  generateEmptyDirectories: true
+targets:
+  Glyph:
+    type: application
+    platform: iOS
+    sources:
+      - path: Glyph
+        excludes:
+          - Info.plist
+    info:
+      path: Glyph/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.glyph.editor
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_TEAM: ""
